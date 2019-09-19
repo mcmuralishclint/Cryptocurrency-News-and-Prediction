@@ -76,8 +76,14 @@ python -m virtualenv env
 3. Activate the virtual environment
 . env/Scripts/activate
 
-4.Install the dependancies
+4. Install the dependancies
 pip install -r requirements.txt
 
-5.Run the app
+5. Run the app
 python manage.py runserver
+
+```python
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
