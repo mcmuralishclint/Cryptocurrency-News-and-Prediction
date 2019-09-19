@@ -1,0 +1,74 @@
+{%extends 'dashboard/base.html'%}
+
+{%block content%}
+
+{% if crypto != '' %}
+	{%if crypto.Response%}
+		
+		<div class="jumbotron">
+		<h1 class="display-4">Sorry Please enter a valid currency</h1>
+		<p class="lead">Suggested search terms</p>
+		<ul>
+			<li>BTC</li>
+			<li>ETH</li>
+			<li>XRP</li>
+			<li>BCH</li>
+			<li>EOS</li>
+			<li>LTS</li>
+			<li>LINK</li>
+			<li>BNB</li>
+			<li>TRX</li>
+			<li>ETC</li>
+		</ul>
+	</div>
+	{%else%}
+	{%for key,value in crypto.DISPLAY.items%}
+	<div class="jumbotron">
+		<h1 class="display-4">{{key}}</h1>
+		<strong>Price</strong> : {{value.USD.PRICE}}<br>
+		<strong>Highest Price</strong> : {{value.USD.HIGHDAY}}<br>
+		<strong>Lowest Price</strong> : {{value.USD.LOWDAY}}<br>
+		<strong>Market Cap</strong> : {{value.USD.MKTCAP}}<br>
+		<hr>
+		<strong>Predicted Value for Tomorrow</strong> : <span style="color: red;">${{pred}}</span><br>
+		
+		<!-- <strong>Probability of prediction</strong> : <span style="color: red;">xxx%</span> -->
+	</div>
+	{%endfor%}
+	<div class="col-md-12">
+		<h1 class="display-6" style="text-align: center;">The average price of {{quote}} to USD for the past 60 days</h1>
+		{{plot|safe}}
+	</div>
+	{%endif%}
+{%else%}
+
+	
+	<div class="jumbotron">
+		<h1 class="display-4">Enter a crypto to search</h1>
+		<p class="lead">Suggested search terms</p>
+		<ul>
+			<li>BTC</li>
+			<li>ETH</li>
+			<li>XRP</li>
+			<li>BCH</li>
+			<li>EOS</li>
+			<li>LTS</li>
+			<li>LINK</li>
+			<li>BNB</li>
+			<li>TRX</li>
+			<li>ETC</li>
+		</ul>
+	</div>
+
+{%endif%}
+
+
+<!-- {%for x in history.Data.Data%}	
+	{{x.high}}
+	<br>
+{%endfor%} -->
+
+
+{%endblock%}
+
+
