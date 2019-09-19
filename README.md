@@ -19,7 +19,7 @@ Moreover a machine learning model will be used to predict the price of a cryptoc
 
 When the home page loads, the table of cryptos and the news information comes up.
 
-Table of cryptos
+**Table of cryptos**
 ![Alt text](images/crypto-main.png?raw=true "Title")
-News Information
+**News Information**
 ![Alt text](images/crypto-news.png?raw=true "Title")
