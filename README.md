@@ -15,3 +15,4 @@ Moreover a machine learning model will be used to predict the price of a cryptoc
 5. Using Plotly to plot the trend of a given cryptocurrency.
 6. Search bar to search for a cryptocurrency. If an unknown search term is entered, an error will be displayed.
 
+![Alt text](images/crypto-error.png?raw=true "Title")
