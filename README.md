@@ -27,6 +27,8 @@ When the home page loads, the table of cryptos and the news information comes up
 
 ![Alt text](images/crypto-news.png?raw=true "Title")
 
+### Search Page
+
 **Search for Crypto**
 
 ![Alt text](images/search-crypto.png?raw=true "Title")
