@@ -4,7 +4,7 @@ A web app to display cryptocurrency news and forecast a cryptocurrency's price f
 ## Objective
 
 The purpose of this web app is to grab cryptocurrency details from cryptocompare.com through an api and display them on the web application. 
-Moreover a machine learning model will be used to predict the price of a cryptocurrency for the next day.
+Moreover a statistical model will be used to predict the price of a cryptocurrency for the next day.
 
 ## Things tried
 
@@ -29,6 +29,8 @@ When the home page loads, the table of cryptos and the news information comes up
 
 ### Search Page
 
+This page will display information of the searched crypto
+
 **Search for Crypto**
 
 ![Alt text](images/search-crypto.png?raw=true "Title")
@@ -44,3 +46,20 @@ When the home page loads, the table of cryptos and the news information comes up
 **Error when a searched crypto is not found**
 
 ![Alt text](images/crypto-error.png?raw=true "Title")
+
+
+## Statistical model
+
+I learnt about the different types of time series models from Analytics Vidhya (https://www.analyticsvidhya.com/blog/2018/02/time-series-forecasting-methods/) and implemented a few models on a sample dataset to understand the trend and how Holt-Winter works.
+
+### Things learned
+
+1. When to use a Holt Winter's model
+2. How single exponential smoothing works
+3. The mathematics of Holt Winter's model
+4. Other popular models such as moving average, Holt's linear trend method and ARIMA
+5. Experimented the trend of different models on jupyter notebook
+
+**Holt WInter's model**
+
+![Alt text](images/holt-winter-model.png?raw=true "Title")
