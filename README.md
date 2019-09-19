@@ -63,3 +63,21 @@ I learnt about the different types of time series models from Analytics Vidhya (
 **Holt WInter's model**
 
 ![Alt text](images/holt-winter-model.png?raw=true "Title")
+
+
+## How to run the program?
+
+1. Clone the github repository
+git clone https://github.com/mcmuralishclint/Cryptocurrency-News-and-Prediction.git
+
+2. Create a virtual environment
+python -m virtualenv env
+
+3. Activate the virtual environment
+. env/Scripts/activate
+
+4.Install the dependancies
+pip install -r requirements.txt
+
+5.Run the app
+python manage.py runserver
