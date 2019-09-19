@@ -68,22 +68,27 @@ I learnt about the different types of time series models from Analytics Vidhya (
 ## How to run the program?
 
 1. Clone the github repository
+```python
 git clone https://github.com/mcmuralishclint/Cryptocurrency-News-and-Prediction.git
+```
 
 2. Create a virtual environment
+```python
 python -m virtualenv env
+```
 
 3. Activate the virtual environment
+```python
 . env/Scripts/activate
+```
 
 4. Install the dependancies
+```python
 pip install -r requirements.txt
+```
 
 5. Run the app
-python manage.py runserver
-
 ```python
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+python manage.py runserver
 ```
+
