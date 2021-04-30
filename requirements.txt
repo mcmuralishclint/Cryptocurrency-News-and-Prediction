@@ -18,5 +18,5 @@ scipy==1.3.1
 six==1.12.0
 sqlparse==0.3.0
 statsmodels==0.10.1
-urllib3==1.25.3
+urllib3==1.25.8
 whitenoise==4.1.3
